@@ -8,13 +8,14 @@ target_name = "Rufus"
 def git_status_checker(git_dir) :
 
     # get and test the input git directory 
+    # if the input git directory is empty, then display error
     repo_to_check = git.Repo(git_dir)
     assert not (repo_to_check.bare), f"Repo error: Repo empty, got: {repo_to_check}"
 
     # git repo check
     head_to_check = repo_to_check.head
-    branch_name = repo_to_check.active_branch
-    active_branch_check = True if branch_name == 'main' else False
+    active_branch = repo_to_check.active_branch
+    active_branch_check = True if (active_branch.name == "main") else False
     modified_files_check = repo_to_check.is_dirty()
 
     # time check setup 
@@ -35,7 +36,7 @@ def git_status_checker(git_dir) :
         authored_target_name = False
 
     print("Datestamp : ", today)
-    print("Branch Name: ", branch_name)
+    print("Branch Name: ", active_branch.name)
     print("Active Branch : ", active_branch_check)
     print("Local Changes : ", modified_files_check)
     print("Recent Commit : ", last_week_check)
