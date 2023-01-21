@@ -32,6 +32,8 @@ The branch name
 
 Whether the branch is the active branch
 
+Whether there are local changes
+
 Whether the most recent commit is less than a week old
 
 Whether the commit was authored by the target (in this case "Rufus")
