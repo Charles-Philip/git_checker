@@ -37,9 +37,9 @@ The program outputs the following:
 - Whether the most recent commit is less than a week old
 
 - Whether the commit was authored by the target (in this case "Rufus")
-- 
+
   -
-If the commit was not authored by the target, then print who did the last commit
+  If the commit was not authored by the target, then print who did the last commit
   -
 
 ---
