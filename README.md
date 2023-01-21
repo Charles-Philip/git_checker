@@ -2,8 +2,6 @@
 
 ## The program requires the following:
 
----
-
 Python version 3.7 or newer
 
 Git version 1.7.0 or newer
@@ -16,7 +14,6 @@ use the following command to install the GitPython
 
 ## To run the program:
 
----
 
 use the following command to install the GitPython
 > python3 git_checker.py
