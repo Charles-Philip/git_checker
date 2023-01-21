@@ -37,7 +37,7 @@ def git_status_checker(git_dir) :
     print("Active Branch : ", active_branch_check)
     print("Local Changes : ", modified_files_check)
     print("Recent Commit : ", last_week_check)
-    print("Authored by" + target_name + ": " + authored_target_name)
+    print("Authored by " + target_name + " : " + str(authored_target_name))
 
 
 git_dir_input = input("Please enter the directory of the git repository: ")
