@@ -7,6 +7,7 @@ Python version 3.7 or newer
 Git version 1.7.0 or newer
 
 GitPython library
+
 use the following command to install the GitPython
 > pip install GitPython
 
@@ -14,11 +15,10 @@ use the following command to install the GitPython
 
 ## To run the program:
 
-
 use the following command to install the GitPython
 > python3 git_checker.py
 
-and then input the git repository when prompted
+and then input the git repository location when prompted
 
 ---
 
