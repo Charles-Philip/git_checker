@@ -35,7 +35,7 @@ def git_status_checker(git_dir) :
     else :
         authored_target_name = False
 
-    print("Datestamp : ", today + "GMT")
+    print("Datestamp : ", str(today.strftime("%m-%d-%Y %H:%M")) + " GMT")
     print("Branch Name: ", active_branch.name)
     print("Active Branch : ", active_branch_check)
     print("Local Changes : ", modified_files_check)
