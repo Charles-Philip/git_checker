@@ -10,7 +10,7 @@ Git version 1.7.0 or newer
 
 GitPython library
 use the following command to install the GitPython
-## pip install GitPython
+> pip install GitPython
 
 ---
 
@@ -19,7 +19,7 @@ use the following command to install the GitPython
 ---
 
 use the following command to install the GitPython
-### python3 git_checker.py
+> python3 git_checker.py
 
 and then input the git repository when prompted
 
@@ -27,9 +27,9 @@ and then input the git repository when prompted
 
 ## Program Examples:
 
-![alt text]('./images/specific dir git checker Capture.PNG' "specific directory")
+![alt text](https://github.com/Charles-Philip/git_checker/blob/main/images/specific%20dir%20git%20checker%20Capture.PNG "specific directory")
 
-![alt text]('./images/current dir git checker Capture.PNG' "current directory")
+![alt text](https://github.com/Charles-Philip/git_checker/blob/main/images/current%20dir%20git%20checker%20Capture.PNG "current directory")
 
 
 
