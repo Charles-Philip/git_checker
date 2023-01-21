@@ -30,7 +30,7 @@ The program outputs the following:
 
 - The branch name 
 
-- Whether the branch is the active branch
+- Whether the branch is an active branch
 
 - Whether there are local changes
 
