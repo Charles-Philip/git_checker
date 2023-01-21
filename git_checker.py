@@ -14,11 +14,13 @@ def git_status_checker(git_dir) :
 
     # git repo check
     head_to_check = repo_to_check.head
-    active_branch = repo_to_check.active_branch
-    active_branch_check = True if (active_branch.name == "main") else False
     modified_files_check = repo_to_check.is_dirty()
 
-    # time check setup 
+    # check active branch
+    active_branch_check = not head_to_check.is_detached
+    active_branch = repo_to_check.active_branch
+
+    # time check setup
     today = dtt.now()
     last_week = dt.timedelta(days = 7)
     last_commit_dt = dtt.fromtimestamp(head_to_check.commit.committed_date)
@@ -30,7 +32,7 @@ def git_status_checker(git_dir) :
     authored_target_name = False
     last_git_author = head_to_check.commit.author.name
     
-    if last_git_author == target_name :
+    if last_git_author is target_name :
         authored_target_name = True
     else :
         authored_target_name = False
@@ -41,7 +43,7 @@ def git_status_checker(git_dir) :
     print("Local Changes : ", modified_files_check)
     print("Recent Commit : ", last_week_check)
     print("Authored by " + target_name + " : " + str(authored_target_name))
-    if authored_target_name == False :
+    if authored_target_name is False :
         print("Last commit authored by " + last_git_author)
 
 git_dir_input = input("Please enter the directory of the git repository: ")
