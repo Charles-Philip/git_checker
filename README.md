@@ -13,9 +13,9 @@ use the following command to install the GitPython
 
 ---
 
-## To run the program:
+## How to run the program:
 
-use the following command to install the GitPython
+Use the following command to run the program
 > python3 git_checker.py
 
 and when prompted, input the git repository location
@@ -26,19 +26,21 @@ and when prompted, input the git repository location
 
 The program outputs the following:
 
-The datestamp in Greenwich Mean Time
+- The datestamp in Greenwich Mean Time
 
-The branch name 
+- The branch name 
 
-Whether the branch is the active branch
+- Whether the branch is the active branch
 
-Whether there are local changes
+- Whether there are local changes
 
-Whether the most recent commit is less than a week old
+- Whether the most recent commit is less than a week old
 
-Whether the commit was authored by the target (in this case "Rufus")
-
+- Whether the commit was authored by the target (in this case "Rufus")
+- 
+  -
 If the commit was not authored by the target, then print who did the last commit
+  -
 
 ---
 
