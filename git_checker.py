@@ -13,7 +13,8 @@ def git_status_checker(git_dir) :
 
     # git repo check
     head_to_check = repo_to_check.head
-    active_branch_check = head_to_check.is_detached
+    branch_name = repo_to_check.active_branch
+    active_branch_check = True if branch_name == 'main' else False
     modified_files_check = repo_to_check.is_dirty()
 
     # time check setup 
@@ -34,11 +35,13 @@ def git_status_checker(git_dir) :
         authored_target_name = False
 
     print("Datestamp : ", today)
+    print("Branch Name: ", branch_name)
     print("Active Branch : ", active_branch_check)
     print("Local Changes : ", modified_files_check)
     print("Recent Commit : ", last_week_check)
     print("Authored by " + target_name + " : " + str(authored_target_name))
-
+    if authored_target_name == False :
+        print("Last commit authored by " + last_git_author)
 
 git_dir_input = input("Please enter the directory of the git repository: ")
 git_status_checker(git_dir_input)
