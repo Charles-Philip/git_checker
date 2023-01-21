@@ -8,7 +8,7 @@ Git version 1.7.0 or newer
 
 GitPython library
 
-use the following command to install the GitPython
+use the following command to install the GitPython library
 > pip install GitPython
 
 ---
