@@ -18,7 +18,7 @@ use the following command to install the GitPython
 use the following command to install the GitPython
 > python3 git_checker.py
 
-and then input the git repository location when prompted
+and when prompted, input the git repository location
 
 ---
 
