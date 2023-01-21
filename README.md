@@ -44,6 +44,6 @@ The program outputs the following:
 
 ## Program Examples:
 
-![alt text](https://github.com/Charles-Philip/git_checker/blob/main/images/git_facts.PNG "specific and current directory")
+![alt text](https://github.com/Charles-Philip/git_checker/blob/main/images/git_facts.png "specific and current directory")
 
 
